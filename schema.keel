@@ -5,10 +5,9 @@ enum UserRole {
 
 model User {
     fields {
-        identity Identity @unique
+        identity Identity
         name Text
         role UserRole @default(UserRole.Customer)
-        photoUrl Text?
     }
 
     actions {
